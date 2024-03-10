@@ -19,14 +19,26 @@ export default {
 <template>
     <div>
         <h1>Opera</h1>
-        <div class="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nihil sit porro corporis ad. Ab,
+            voluptatibus soluta nesciunt asperiores, voluptates, placeat totam sapiente dolorum accusantium expedita
+            maxime quibusdam quisquam fugiat!
+            Dolor commodi nam, eligendi reprehenderit obcaecati inventore aut atque assumenda eum eaque, non veniam
+            incidunt quae dolore vitae quos vel. Eveniet facilis tempore voluptates saepe, earum quas labore sit
+            voluptatum!
+            Non tenetur at debitis cumque illo, doloremque provident eaque dolor libero deserunt ipsa eos aliquid ut
+            excepturi. Tempora, atque voluptatem. Quibusdam dolore, vel quidem eligendi atque a iure nihil ipsam.
+            Magnam temporibus earum obcaecati nulla deserunt quia suscipit, vero debitis doloremque dignissimos corporis
+            maxime natus veritatis consequatur ratione architecto atque reprehenderit aperiam iusto perferendis minus
+            perspiciatis veniam rem inventore? Sed.
+            Illum, officiis fugit iusto, repellendus est ad ipsam quo illo laboriosam, quia eius cum enim earum beatae
+            accusamus fuga reprehenderit laudantium harum. Expedita veritatis repudiandae sapiente illum officiis.</p>
+        <div class="container mt-5">
             <div class="row justify-content-center align-content-center">
                 <div class="col-12 col-lg-4" v-for="(opera, indexOpera) in operaArray" :key="indexOpera">
 
-                    <div class="card mb-3 d-flex flex-column">
-                        <img class="align-self-center rounded-5" :src="getImagePath(opera.img)"
-                            :alt="opera.img" />
-                        
+                    <div class="card mb-3 d-flex flex-column bg-transparent border-0">
+                        <img class="align-self-center rounded-5" :src="getImagePath(opera.img)" :alt="opera.img" />
+
                     </div>
 
                     <div class="card-body bg_operacardbody mb-5 p-3">
@@ -46,9 +58,10 @@ img {
     width: 100%;
 }
 
+
 .bg_operacardbody {
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 30px;
     border: 2px solid rgb(106, 0, 255);
 }
 

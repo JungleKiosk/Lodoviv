@@ -7,11 +7,16 @@ import { RouterView, RouterLink } from "vue-router"
 
 
 <template>
- 
-  <h1 class="text-center mt-5" style="font-family: monospace; font-weight: bold; color: #ffbf00;">Lodoviv</h1>
+
+
+
 
   <div class="container my-4 px-5">
-    <div class="row">
+    <div class="row justify-content-center">
+
+      <div class="col-12 col-lg-4">
+        <img src="./assets/img/logo/loGoviv_sign.svg" alt="">
+      </div>
       <div class="col-12 col-lg-12">
         <div class="links">
           <!-- use <RouterLink></RouterLink> instead <a></a> to save for each pagand not refresh_e.g. button count stay fixed!-->
@@ -27,4 +32,10 @@ import { RouterView, RouterLink } from "vue-router"
   </div>
 </template>
 
-<style></style>
+<style>
+
+img{
+  width: 100%;
+}
+
+</style>
