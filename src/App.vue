@@ -8,7 +8,7 @@ import { RouterView, RouterLink } from 'vue-router';
       <div class="col-12 col-lg-4">
         <img src="./assets/img/logo/loGoviv_sign.svg" alt="">
       </div>
-      
+
       <div class="col-12 col-lg-12">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -21,7 +21,7 @@ import { RouterView, RouterLink } from 'vue-router';
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            Menu <!-- Testo del pulsante -->
           </button>
 
           <!-- Navbar links -->
@@ -51,5 +51,4 @@ import { RouterView, RouterLink } from 'vue-router';
 img {
   width: 100%;
 }
-
 </style>

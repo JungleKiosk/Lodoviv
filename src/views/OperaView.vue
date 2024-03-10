@@ -1,23 +1,21 @@
-<script>
+<script setup>
+import { reactive } from 'vue';
+import MenuOperaToggle from './MenuOperaToggle.vue';
 import { operaArray } from "../data/operaCards.js";
 
-export default {
-    data() {
-        return {
-            operaArray: operaArray
-        };
-    },
-    methods: {
-        getImagePath(name) {
-            // Metodo per ottenere il percorso completo dell'immagine
-            return new URL(`../assets/img/opera/${name}`, import.meta.url).href;
-        }
-    }
-};
+const state = reactive({
+    operaArray: operaArray
+});
+
+function getImagePath(name) {
+    // Metodo per ottenere il percorso completo dell'immagine
+    return new URL(`../assets/img/opera/${name}`, import.meta.url).href;
+}
 </script>
 
 <template>
     <div>
+        <MenuOperaToggle />
         <h1>Opera</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nihil sit porro corporis ad. Ab,
             voluptatibus soluta nesciunt asperiores, voluptates, placeat totam sapiente dolorum accusantium expedita
@@ -34,7 +32,7 @@ export default {
             accusamus fuga reprehenderit laudantium harum. Expedita veritatis repudiandae sapiente illum officiis.</p>
         <div class="container mt-5">
             <div class="row justify-content-center align-content-center">
-                <div class="col-12 col-lg-4" v-for="(opera, indexOpera) in operaArray" :key="indexOpera">
+                <div class="col-12 col-lg-4" v-for="(opera, indexOpera) in state.operaArray" :key="indexOpera">
 
                     <div class="card mb-3 d-flex flex-column bg-transparent border-0">
                         <img class="align-self-center rounded-5" :src="getImagePath(opera.img)" :alt="opera.img" />
