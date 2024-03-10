@@ -42,18 +42,19 @@ export default {
         </div>
 
         <ul class="p-3">
-            <li><a class="ancor_menu" href="#"></a></li>
+            <li><a class="ancor_menu" href="#opera1">1</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#"></a></li>
+            <li><a class="ancor_menu" href="#opera2">2</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#"></a></li>
+            <li><a class="ancor_menu" href="#opera3">3</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#"></a></li>
+            <li><a class="ancor_menu" href="#opera4">4</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#"></a></li>
+            <li><a class="ancor_menu" href="#opera5">5</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#"></a></li>
+            <li><a class="ancor_menu" href="#opera6">6</a></li>
             <hr>
+            
         </ul>
 
     </nav>
@@ -88,6 +89,11 @@ nav::-webkit-scrollbar-thumb:hover {
 .sidebar a {
     list-style-type: none;
     font-family: monospace;
+}
+
+a{
+    text-decoration: none;
+    color: #1dc0bb;  
 }
 
 li a:hover {
@@ -126,7 +132,7 @@ li a:hover {
     z-index: 2;
     display: flex;
     align-items: center;
-    color: #ffbf00;
+    color: rgb(181, 70, 233);
     overflow-x: inherit;
 }
 
@@ -141,14 +147,14 @@ li a:hover {
     display: flex;
     align-items: center;
     background-color: #27272a65;
-    color: #ffbf00;
-    border: 1px solid #ffbf00;
+    color: rgb(181, 70, 233);
+    border: 1px solid rgb(181, 70, 233);
     border-radius: 10px;
     overflow-x: inherit;
 }
 
 .toggle_sidebar_button:hover {
-    background-color: #ffbf00;
+    background-color: rgb(181, 70, 233);
     color: #27272a;
     border: white;
 }

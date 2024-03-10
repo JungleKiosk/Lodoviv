@@ -19,27 +19,17 @@ function getImagePath(name) {
         <h1>Opera</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nihil sit porro corporis ad. Ab,
             voluptatibus soluta nesciunt asperiores, voluptates, placeat totam sapiente dolorum accusantium expedita
-            maxime quibusdam quisquam fugiat!
-            Dolor commodi nam, eligendi reprehenderit obcaecati inventore aut atque assumenda eum eaque, non veniam
-            incidunt quae dolore vitae quos vel. Eveniet facilis tempore voluptates saepe, earum quas labore sit
-            voluptatum!
-            Non tenetur at debitis cumque illo, doloremque provident eaque dolor libero deserunt ipsa eos aliquid ut
-            excepturi. Tempora, atque voluptatem. Quibusdam dolore, vel quidem eligendi atque a iure nihil ipsam.
-            Magnam temporibus earum obcaecati nulla deserunt quia suscipit, vero debitis doloremque dignissimos corporis
-            maxime natus veritatis consequatur ratione architecto atque reprehenderit aperiam iusto perferendis minus
-            perspiciatis veniam rem inventore? Sed.
-            Illum, officiis fugit iusto, repellendus est ad ipsam quo illo laboriosam, quia eius cum enim earum beatae
-            accusamus fuga reprehenderit laudantium harum. Expedita veritatis repudiandae sapiente illum officiis.</p>
+            maxime quibusdam quisquam fugiat!</p>
         <div class="container mt-5">
-            <div class="row justify-content-center align-content-center">
-                <div class="col-12 col-lg-4" v-for="(opera, indexOpera) in state.operaArray" :key="indexOpera">
+            <div class="row justify-content-center align-content-center my-5">
+                <div class="col-12 col-lg-8 my-5" v-for="(opera, indexOpera) in state.operaArray" :key="indexOpera" :id="opera.id">
 
-                    <div class="card mb-3 d-flex flex-column bg-transparent border-0">
-                        <img class="align-self-center rounded-5" :src="getImagePath(opera.img)" :alt="opera.img" />
-
+                    <!-- Aggiungi l'id come valore dell'attributo id -->
+                    <div class="card mt-5 d-flex flex-column bg-transparent border-0">
+                        <img class="align-self-center rounded-3" :src="getImagePath(opera.img)" :alt="opera.img" />
                     </div>
 
-                    <div class="card-body bg_operacardbody mb-5 p-3">
+                    <div class=" justify-content-center text-center mb-5">
                         <div class="txt_operadate">{{ opera.date }}</div>
                         <p class="card-text txt_operadesc">{{ opera.description }}</p>
                     </div>
@@ -47,13 +37,14 @@ function getImagePath(name) {
                 </div>
             </div>
         </div>
+
     </div>
 </template>
 
 
 <style scoped>
 img {
-    width: 100%;
+    width: 50%;
 }
 
 
