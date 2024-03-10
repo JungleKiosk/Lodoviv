@@ -1,0 +1,15 @@
+@use './../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@use "./partials/_variables.scss" as *;
+/* @use "./partials/_documentation.scss"; */
+
+body {
+    background-color: $bg_body;
+    color: $light;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: #ffbf00;
+}
