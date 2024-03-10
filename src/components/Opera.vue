@@ -1,13 +1,15 @@
 <script>
 import ToggleSideMenu from "../components/opera_root/ToggleSideMenu.vue";
+import OperaCards from "../components/opera_root/OperaCards.vue";
 
 export default {
     data() {
 
     },
     components: {
-    ToggleSideMenu
-}
+        ToggleSideMenu,
+        OperaCards
+    }
 }
 
 
@@ -15,7 +17,7 @@ export default {
 
 
 <template>
-    <div class="documentation_container">
+    <div>
 
         <main class="main-content">
 
@@ -25,13 +27,12 @@ export default {
 
             <section>
                 <ToggleSideMenu></ToggleSideMenu>
-                
+                <OperaCards></OperaCards>
+
             </section>
 
         </main>
     </div>
 </template>
-  
+
 <style></style>
-  
-  
