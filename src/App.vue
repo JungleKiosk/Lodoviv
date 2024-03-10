@@ -15,8 +15,8 @@
           <!-- use <RouterLink></RouterLink> instead <a></a> to save for each pagand not refresh_e.g. button count stay fixed!-->
 
           <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/">Home</RouterLink>
-          <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/documentation">Documentazione</RouterLink>
-          <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/exercise">Exercise</RouterLink>
+          <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/documentation">About me</RouterLink>
+          <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/exercise">Opera</RouterLink>
         </div>
       </div>
     </div>
