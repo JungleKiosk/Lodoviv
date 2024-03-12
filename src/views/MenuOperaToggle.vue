@@ -23,7 +23,7 @@ export default {
 
 <template>
 
-    <button class="toggle_sidebar_button btn_menu pulp" @click="toggleSidebar">menu
+    <button class="toggle_sidebar_button btn_menu pulp" @click="toggleSidebar"><span style="color: #ebbdfe;">menu</span>
     </button>
 
     <a href="#" class="scroll-to-top upper_arrow" @click="scrollToTop">
@@ -132,7 +132,7 @@ li a:hover {
     z-index: 2;
     display: flex;
     align-items: center;
-    color: rgb(181, 70, 233);
+    color: #ebbdfe;
     overflow-x: inherit;
 }
 
@@ -147,14 +147,14 @@ li a:hover {
     display: flex;
     align-items: center;
     background-color: #27272a65;
-    color: rgb(181, 70, 233);
-    border: 1px solid rgb(181, 70, 233);
+    color: #ebbdfe;
+    border: 1px solid #ebbdfe;
     border-radius: 10px;
     overflow-x: inherit;
 }
 
 .toggle_sidebar_button:hover {
-    background-color: rgb(181, 70, 233);
+    background-color: #ebbdfe;
     color: #27272a;
     border: white;
 }
