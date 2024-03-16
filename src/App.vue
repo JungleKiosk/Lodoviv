@@ -10,7 +10,7 @@ function toggleShadow() {
 
 // Avvia l'alternanza dell'ombra ogni due secondi quando il componente viene montato
 onMounted(() => {
-  setInterval(toggleShadow, 3000);
+  setInterval(toggleShadow, 2000);
 });
 </script>
 
@@ -18,7 +18,7 @@ onMounted(() => {
   <div class="container my-4 px-5">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-4">
-        <img :style="{ filter: showShadow ? 'drop-shadow(0 0 8px #8500FF)' : 'none' }"
+        <img :style="{ filter: showShadow ? 'drop-shadow(0 0 20px #8500FF)' : 'none' }"
           src="./assets/img/logo/loGoviv_sign.svg" alt="">
       </div>
     </div>

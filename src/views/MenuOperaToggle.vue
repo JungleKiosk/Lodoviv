@@ -54,6 +54,14 @@ export default {
             <hr>
             <li><a class="ancor_menu" href="#opera6">6</a></li>
             <hr>
+            <li><a class="ancor_menu" href="#opera7">7</a></li>
+            <hr>
+            <li><a class="ancor_menu" href="#opera8">8</a></li>
+            <hr>
+            <li><a class="ancor_menu" href="#opera9">9</a></li>
+            <hr>
+            <li><a class="ancor_menu" href="#opera10">10</a></li>
+            <hr>
             
         </ul>
 
