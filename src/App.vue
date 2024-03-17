@@ -1,24 +1,45 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
-const showShadow = ref(false);
+const cursorLight = ref(null);
+const cursorMoving = ref(false);
+const neonEffect = ref(false);
+let timer; // Variabile per il timer
 
-// Funzione per alternare lo stato di showShadow ogni due secondi
-function toggleShadow() {
-  showShadow.value = !showShadow.value;
+// Funzione per aggiornare lo stato del movimento del cursore
+function updateCursorMovement(event) {
+    cursorLight.value.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+    cursorMoving.value = true; // Imposta lo stato del movimento del cursore su true quando il cursore si muove
+    clearTimeout(timer); // Resetta il timer quando il cursore si muove
+    timer = setTimeout(() => cursorMoving.value = false, 500); // Imposta lo stato del movimento del cursore su false dopo 1 secondo di inattività
 }
 
-// Avvia l'alternanza dell'ombra ogni due secondi quando il componente viene montato
+// Aggiungi un listener per l'evento mousemove per aggiornare la posizione del pallino verde neon
 onMounted(() => {
-  setInterval(toggleShadow, 2000);
+    window.addEventListener('mousemove', updateCursorMovement);
 });
+
+// Rimuovi il listener quando il componente viene smontato per evitare memory leak
+onBeforeUnmount(() => {
+    window.removeEventListener('mousemove', updateCursorMovement);
+});
+
+function toggleNeonEffect() {
+  neonEffect.value = !neonEffect.value;
+}
+onMounted(() => {
+  setInterval(toggleNeonEffect, 2000);
+});
+
 </script>
 
+
 <template>
+  <div class="cursor-light" :class="{ 'hidden': cursorMoving }" ref="cursorLight"></div>
   <div class="container my-4 px-5">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-4">
-        <img :style="{ filter: showShadow ? 'drop-shadow(0 0 20px #8500FF)' : 'none' }"
+        <img :style="{ filter: neonEffect ? 'drop-shadow(0 0 20px #8500FF)' : 'none' }"
           src="./assets/img/logo/loGoviv_sign.svg" alt="">
       </div>
     </div>

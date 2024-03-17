@@ -136,8 +136,8 @@ function getImagePath(name) {
 
                     <div class="lt-animation-top"></div>
                     <div class="lt-animation-bottom"></div>
-                    <div class="rt-animation-top"></div>
-                    <div class="rt-animation-bottom"></div>
+                 <!--    <div class="rt-animation-top"></div> -->
+                   <!--  <div class="rt-animation-bottom"></div> -->
 
                     <img class="align align-self-center rounded-circle transition-shape mb-5"
                         :src="getImagePath(opera.img, 'opera')" :alt="opera.img" />
@@ -224,6 +224,8 @@ img {
     }
 }
 
+
+
 .lt-animation-top,
 .lt-animation-bottom,
 .rt-animation-top,
@@ -260,7 +262,7 @@ img {
 .lt-animation-bottom {
     bottom: 0;
     /* Posiziona l'animazione sinistra sotto l'immagine */
-    background: linear-gradient(to right, transparent, #8500FF);
+    background: linear-gradient(to left, transparent, #8500FF);
     /* Luce bianca che passa da sinistra a destra */
     animation: l-bottom-passing 20s linear infinite;
     /* Animazione che fa scorrere la luce sotto */
@@ -332,4 +334,28 @@ img {
         /* Si sposta verso sinistra fino al bordo sinistro della finestra */
     }
 }
+
+
+@media (max-width: 768px) {
+    .card_opera {
+        height: auto; /* Imposta l'altezza automatica */
+        margin-top: 5rem; /* Riduce il margine superiore */
+    }
+
+    .transition-shape {
+        border-radius: 0; /* Rimuove il border-radius */
+    }
+
+    .card_opera:hover {
+        animation: none; /* Rimuove l'animazione pop */
+    }
+
+    .lt-animation-top,
+    .lt-animation-bottom,
+    .rt-animation-top,
+    .rt-animation-bottom {
+        display: none; /* Nasconde le animazioni */
+    }
+}
+
 </style>
