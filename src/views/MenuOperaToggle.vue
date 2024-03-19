@@ -42,25 +42,25 @@ export default {
         </div>
 
         <ul class="p-3">
-            <li><a class="ancor_menu" href="#opera1">1</a></li>
+            <li><a class="ancor_menu" href="#opera1">Citizenship: my head</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera2">2</a></li>
+            <li><a class="ancor_menu" href="#opera2">24/7</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera3">3</a></li>
+            <li><a class="ancor_menu" href="#opera3">La dormiente</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera4">4</a></li>
+            <li><a class="ancor_menu" href="#opera4">La nostra coscienza <br> infestata da vite potenziali</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera5">5</a></li>
+            <li><a class="ancor_menu" href="#opera5">Utopia urbana</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera6">6</a></li>
+            <li><a class="ancor_menu" href="#opera6">Nonostante tutto</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera7">7</a></li>
+            <li><a class="ancor_menu" href="#opera7">Siccità: 15000 litri d’acqua <br> per 1 kilo di carne bovina</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera8">8</a></li>
+            <li><a class="ancor_menu" href="#opera8">Taser per la polizia</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera9">9</a></li>
+            <li><a class="ancor_menu" href="#opera9">Non fate la guerra per fare la pace, <br> fate la pace per fare la pace</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera10">10</a></li>
+            <li><a class="ancor_menu" href="#opera10">Utopia conviviale</a></li>
             <hr>
             
         </ul>

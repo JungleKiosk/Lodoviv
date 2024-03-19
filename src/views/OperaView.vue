@@ -21,6 +21,7 @@ function getImagePath(name) {
         <div class="container mb-5">
             <div class="row">
                 <div class="col-12 col-lg-8 mt-5">
+                    
                     <img src="../assets/img/dec/jfq.png" style="width: 100%;" alt="">
                     <h4 class="m-3">Enjoy my artwork, have fun, think, reflect!</h4>
                     <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
@@ -80,69 +81,25 @@ function getImagePath(name) {
 
                 <div class="col-lg-4 text-center mt-5">
                 </div>
-                <!-- <div class="col-4 col-lg-3 text-center">
 
-                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" width="50%" id="blobSvg">
-                        <defs>
-                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                <stop offset="0%" style="stop-color: rgb(133, 0, 255);"></stop>
-                                <stop offset="100%" style="stop-color: rgb(4, 188, 185);"></stop>
-                            </linearGradient>
-                        </defs>
-                        <path stroke-width="7px" stroke="url(#gradient)">
-                            <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="
-                                M379,328Q301,406,254,343.5Q207,281,132.5,196Q58,
-                                111,184.5,87.5Q311,64,384,157Q457,250,379,328Z;
-                            
-                                M382.5,283.5Q272,317,186.5,337.5Q101,358,127,269Q153,
-                                180,239.5,97.5Q326,15,409.5,132.5Q493,250,382.5,283.5Z;
-
-                                M301,283.5Q272,317,172,348Q72,379,84,258.5Q96,138,196.5,
-                                121.5Q297,105,313.5,177.5Q330,250,301,283.5Z;
-
-                                M379,328Q301,406,254,343.5Q207,281,132.5,196Q58,
-                                111,184.5,87.5Q311,64,384,157Q457,250,379,328Z;
-                            
-                                M382.5,283.5Q272,317,186.5,337.5Q101,358,127,269Q153,
-                                180,239.5,97.5Q326,15,409.5,132.5Q493,250,382.5,283.5Z;
-
-                                M301,283.5Q272,317,172,348Q72,379,84,258.5Q96,138,196.5,
-                                121.5Q297,105,313.5,177.5Q330,250,301,283.5Z;
-
-                                M364,338Q307,426,242.5,364Q178,302,136.5,219.5Q95,137,190,
-                                139Q285,141,353,195.5Q421,250,364,338Z;
-
-                                M379,328Q301,406,254,343.5Q207,281,132.5,196Q58,
-                                111,184.5,87.5Q311,64,384,157Q457,250,379,328Z; ">
-                            </animate>
-                        </path>
-                    </svg>
-                </div> -->
             </div>
-
+            <div class="lt-animation-bottom"></div>
+            
         </div>
     </section>
-
+    <div class="lt-animation-top"></div>
     <div class="container mt-5">
-        <div class="row justify-content-center align-content-center my-5">
-            <div class="col-12 col-lg-8 my-5">
+        <div class="row justify-content-center my-5">
+            <div class="col-12 col-lg-12 my-5 text-center">
                 <div v-for="(opera, indexOpera) in state.operaArray" :key="indexOpera" :id="opera.id"
-                    class="position-relative card card_opera">
+                class="card_opera">
 
                     <div class="text-center mt-5">
                         <h1 class="txt_operadate">{{ opera.title }}</h1>
                     </div>
 
-                    <div class="lt-animation-top"></div>
-                    <div class="lt-animation-bottom"></div>
-                 <!--    <div class="rt-animation-top"></div> -->
-                   <!--  <div class="rt-animation-bottom"></div> -->
-
-                    <img class="align align-self-center rounded-circle transition-shape mb-5"
+                    <img class="mb-5"
                         :src="getImagePath(opera.img, 'opera')" :alt="opera.img" />
-
-
 
                 </div>
             </div>
@@ -173,168 +130,14 @@ img {
     z-index: -1;
 }
 
-.bg_operacardbody {
-    background-color: transparent;
-    border-radius: 30px;
-    border: 2px solid rgb(106, 0, 255);
-}
-
-.txt_operadate {
-    color: rgb(70, 233, 165);
-
-}
-
-.txt_operadesc {
-    color: rgb(181, 70, 233);
+.txt_operadate{
+    font-family:'Courier New', Courier, monospace;
+    color: #1dc0bb;
 }
 
 .card_opera {
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
     height: 1000px;
-    margin-top: 10rem;
-
 }
-
-.card_opera:hover img {
-    border-radius: 0 !important;
-}
-
-.transition-shape {
-    border-radius: 50%;
-    transition: border-radius 1s ease;
-}
-
-.card_opera:hover {
-    animation: pop 0.7s 1;
-}
-
-@keyframes pop {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
-
-.lt-animation-top,
-.lt-animation-bottom,
-.rt-animation-top,
-.rt-animation-bottom {
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    /* Altezza della linea */
-    z-index: -1;
-    /* Assicura che l'elemento sia dietro all'immagine */
-}
-
-.lt-animation-top,
-.lt-animation-bottom {
-    left: 0;
-    /* Posiziona le animazioni sinistre */
-}
-
-.rt-animation-top,
-.rt-animation-bottom {
-    right: 0;
-    /* Posiziona le animazioni destre */
-}
-
-.lt-animation-top {
-    top: 0;
-    /* Posiziona l'animazione sinistra sopra l'immagine */
-    background: linear-gradient(to right, transparent, #8500FF);
-    /* Luce bianca che passa da sinistra a destra */
-    animation: l-top-passing 20s linear infinite;
-    /* Animazione che fa scorrere la luce sopra */
-}
-
-.lt-animation-bottom {
-    bottom: 0;
-    /* Posiziona l'animazione sinistra sotto l'immagine */
-    background: linear-gradient(to left, transparent, #8500FF);
-    /* Luce bianca che passa da sinistra a destra */
-    animation: l-bottom-passing 20s linear infinite;
-    /* Animazione che fa scorrere la luce sotto */
-}
-
-.rt-animation-top {
-    top: 0;
-    /* Posiziona l'animazione destra sopra l'immagine */
-    background: linear-gradient(to left, transparent, #1dc0bb);
-    /* Luce bianca che passa da destra a sinistra */
-    animation: r-top-passing 20s linear infinite;
-    /* Animazione che fa scorrere la luce sopra */
-}
-
-.rt-animation-bottom {
-    bottom: 0;
-    /* Posiziona l'animazione destra sotto l'immagine */
-    background: linear-gradient(to left, transparent, #1dc0bb);
-    /* Luce bianca che passa da destra a sinistra */
-    animation: r-bottom-passing 20s linear infinite;
-    /* Animazione che fa scorrere la luce sotto */
-}
-
-/* Definizione delle animazioni */
-@keyframes l-top-passing {
-    0% {
-        transform: translateX(-100%);
-        /* Inizia dalla sinistra della finestra */
-    }
-
-    100% {
-        transform: translateX(100%);
-        /* Si sposta verso destra fino al bordo destro della finestra */
-    }
-}
-
-@keyframes l-bottom-passing {
-    100% {
-        transform: translateX(-100%);
-        /* Inizia dalla sinistra della finestra */
-    }
-
-    0% {
-        transform: translateX(100%);
-        /* Si sposta verso destra fino al bordo destro della finestra */
-    }
-}
-
-@keyframes r-top-passing {
-    0% {
-        transform: translateX(100%);
-        /* Inizia dalla destra della finestra */
-    }
-
-    100% {
-        transform: translateX(-100%);
-        /* Si sposta verso sinistra fino al bordo sinistro della finestra */
-    }
-}
-
-@keyframes r-bottom-passing {
-    100% {
-        transform: translateX(100%);
-        /* Inizia dalla destra della finestra */
-    }
-
-    0% {
-        transform: translateX(-100%);
-        /* Si sposta verso sinistra fino al bordo sinistro della finestra */
-    }
-}
-
 
 @media (max-width: 768px) {
     .card_opera {
@@ -350,12 +153,12 @@ img {
         animation: none; /* Rimuove l'animazione pop */
     }
 
-    .lt-animation-top,
+/*     .lt-animation-top,
     .lt-animation-bottom,
     .rt-animation-top,
     .rt-animation-bottom {
-        display: none; /* Nasconde le animazioni */
-    }
+        display: none;
+    } */
 }
 
 </style>
