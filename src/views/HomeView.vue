@@ -4,12 +4,12 @@
 </script>
 
 <template>
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid overflow-x-hidden">
+        <div class="row home_banner">
             <div class="col-12 col-lg-4">
                 <img class="img_face text-center" src="../assets/img/logo/loGoviv.png" alt="">
             </div>
-            <div class="col-12 col-lg-8 mt-5 p-5 ">
+            <div class="col-12 col-lg-8 p-5 ">
                 <h1>Hi! I'm Lodoviv</h1>
                 <h5>Lorem ipsum dolor sit amet.</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur sequi voluptatum
@@ -41,6 +41,15 @@
 .img_face {
     width: 80%;
 }
+
+.home_banner {
+    margin-top: 50px;
+    height: 400px;
+    background-color: #8400ff73;
+}
+
+
+
 
 @media (max-width: 768px) {
     .img_face {
