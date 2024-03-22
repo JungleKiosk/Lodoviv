@@ -4,6 +4,26 @@
 </script>
 
 <template>
+    <header id="goup">
+        <div class="container-fluid bg-video">
+            <video autoplay muted loop id="bgVideo">
+                <source src="../assets/img/video/tramonto.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12 col-md-8 rounded-4 d-flex align-items-center">
+                </div>
+                <div class="col-12 col-lg-6 my-5 text-over-bg rounded-5">
+                    <h1 class="title_init text-center">Hello <br> Video</h1>
+                    <h2>
+                        hello there!
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-4">
@@ -38,6 +58,41 @@
 </template>
 
 <style>
+
+.bg-video {
+    position: relative;
+    height: 800px
+}
+
+#bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-over-bg {
+    position: relative;
+    z-index: 1;
+    color: rgb(251, 249, 249);
+    background-color: rgba(2, 35, 9, 0.562);
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title_init {
+    color: #13e764;
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
 .img_face {
     width: 80%;
 }

@@ -28,23 +28,26 @@ function toggleNeonEffect() {
   neonEffect.value = !neonEffect.value;
 }
 onMounted(() => {
-  setInterval(toggleNeonEffect, 2000);
+  setInterval(toggleNeonEffect, 500);
 });
 
 </script>
 
 
 <template>
-  <!-- <div class="cursor-light" :class="{ 'hidden': cursorMoving }" ref="cursorLight"></div> -->
+  
+  <div class="cursor-light" :class="{ 'hidden': cursorMoving }" ref="cursorLight"></div>
+
+
   <div class="container my-4 px-5">
+
     <div class="row justify-content-center">
       <div class="col-12 col-lg-4">
         <img :style="{ filter: neonEffect ? 'drop-shadow(0 0 20px #8500FF)' : 'none' }"
           src="./assets/img/logo/loGoviv_sign.svg" alt="">
-        <div class="lt-animation-top"></div>
       </div>
     </div>
-
+    <div class="lt-animation-top"></div>
     <div class="row justify-content-center">
       <div class="col-12 col-lg-4 text-center">
         <!-- Utilizza RouterLink per creare bottoni -->
@@ -75,6 +78,11 @@ onMounted(() => {
 </template>
 
 <style>
+
+.video {
+    width: 100%;
+}
+
 img {
   width: 100%;
 }
@@ -119,7 +127,7 @@ img {
 .lt-animation-top {
   left: 0;
   top: 240px;
-  box-shadow: linear-gradient(to right, transparent,0 0 15px 10px #00fff7);
+  box-shadow: linear-gradient(to right, transparent, 0 0 15px 10px #00fff7);
   background: linear-gradient(to right, transparent, #00fff7);
   animation: l-top-passing 30s linear infinite;
 }
