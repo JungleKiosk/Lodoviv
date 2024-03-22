@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div class="container-fluid overflow-x-hidden">
+    <div class="container-fluid overflow-x-hidden banner_floe_home">
         <div class="row home_banner">
             <div class="col-12 col-lg-4">
                 <img class="img_face text-center" src="../assets/img/logo/loGoviv.png" alt="">
@@ -48,6 +48,27 @@
     background-color: #8400ff73;
 }
 
+
+
+.banner_floe_home::-webkit-scrollbar {
+    width: 5px;
+}
+
+.banner_floe_home::-webkit-scrollbar-thumb {
+    background-color: #ebbdfe;
+    height: 123px;
+
+
+}
+
+.banner_floe_home::-webkit-scrollbar-thumb:hover {
+    background-color: #1dc0bb;
+    border-radius: 20px;
+}
+
+.banner_floe_home::-webkit-scrollbar-track {
+    border-left: 1px solid #8400ffc9;
+}
 
 
 
