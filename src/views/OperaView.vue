@@ -21,7 +21,7 @@ function getImagePath(name) {
         <div class="container mb-5">
             <div class="row">
                 <div class="col-12 col-lg-8 mt-5">
-                    
+
                     <img src="../assets/img/dec/jfq.png" style="width: 100%;" alt="">
                     <h4 class="m-3">Enjoy my artwork, have fun, think, reflect!</h4>
                     <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
@@ -84,22 +84,24 @@ function getImagePath(name) {
 
             </div>
             <div class="lt-animation-bottom"></div>
-            
+
         </div>
     </section>
-    <div class="lt-animation-top"></div>
-    <div class="container mt-5">
+
+
+
+    <!--  <div class="lt-animation-top"></div> -->
+    <div class="container mt-5 p-5">
         <div class="row justify-content-center my-5">
             <div class="col-12 col-lg-12 my-5 text-center">
                 <div v-for="(opera, indexOpera) in state.operaArray" :key="indexOpera" :id="opera.id"
-                class="card_opera">
+                    class="card_opera">
 
                     <div class="text-center mt-5">
                         <h1 class="txt_operadate">{{ opera.title }}</h1>
                     </div>
 
-                    <img class="mb-5"
-                        :src="getImagePath(opera.img, 'opera')" :alt="opera.img" />
+                    <img class="mb-5" :src="getImagePath(opera.img, 'opera')" :alt="opera.img" />
 
                 </div>
             </div>
@@ -122,16 +124,17 @@ img {
 }
 
 .jumbotron {
-    height: 450px;
-    background-color: #8500FF;
+    margin-top: 100px;
+    height: 400px;
+    background-color: #8400ff73;
 }
 
 .z-index-minus-1 {
     z-index: -1;
 }
 
-.txt_operadate{
-    font-family:'Courier New', Courier, monospace;
+.txt_operadate {
+    font-family: 'Courier New', Courier, monospace;
     color: #1dc0bb;
 }
 
@@ -141,24 +144,27 @@ img {
 
 @media (max-width: 768px) {
     .card_opera {
-        height: auto; /* Imposta l'altezza automatica */
-        margin-top: 5rem; /* Riduce il margine superiore */
+        height: auto;
+        /* Imposta l'altezza automatica */
+        margin-top: 5rem;
+        /* Riduce il margine superiore */
     }
 
     .transition-shape {
-        border-radius: 0; /* Rimuove il border-radius */
+        border-radius: 0;
+        /* Rimuove il border-radius */
     }
 
     .card_opera:hover {
-        animation: none; /* Rimuove l'animazione pop */
+        animation: none;
+        /* Rimuove l'animazione pop */
     }
 
-/*     .lt-animation-top,
+    /*     .lt-animation-top,
     .lt-animation-bottom,
     .rt-animation-top,
     .rt-animation-bottom {
         display: none;
     } */
 }
-
 </style>

@@ -10,7 +10,7 @@
     </video> -->
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-lg-8 mt-5">
 
                 <h1>About me</h1>
                 <h5>Lorem ipsum dolor sit amet.</h5>
@@ -45,7 +45,7 @@
 
 .circle_neon {
     width: 5%;
-    top: 245px;
+    top: 230px;
     left: 100px;
     z-index: -1;
     rotate: 180deg;
