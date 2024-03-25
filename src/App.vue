@@ -36,15 +36,15 @@ onMounted(() => {
 
 <template>
 
-  <div class="cursor-light" :class="{ 'hidden': cursorMoving }" ref="cursorLight"></div>
+  <!-- <div class="cursor-light" :class="{ 'hidden': cursorMoving }" ref="cursorLight"></div> -->
 
 
   <div class="container my-4 px-5">
 
-    <video autoplay muted loop id="bgVideo" class="video">
+    <!-- <video autoplay muted loop id="bgVideo" class="video">
       <source src="./assets/img/video/waterfall.mp4" type="video/mp4">
       Your browser does not support the video tag.
-    </video>
+    </video> -->
 
     <div class="content-container">
       <div class="row justify-content-center">
@@ -54,7 +54,7 @@ onMounted(() => {
         </div>
       </div>
 
-      <div class="lt-animation-top"></div>
+      <!-- <div class="lt-animation-top"></div> -->
 
       <div class="row justify-content-center">
         <div class="col-12 col-lg-4 text-center">
@@ -96,13 +96,11 @@ onMounted(() => {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  /* Imposta il video in secondo piano */
 }
 
-.content-container {
+/* .content-container {
   position: relative;
-  /* Assicura che il contenuto rimanga in primo piano */
-}
+} */
 
 img {
   width: 70%;

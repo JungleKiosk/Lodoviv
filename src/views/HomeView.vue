@@ -4,30 +4,15 @@
 </script>
 
 <template>
-    <div class="container-fluid overflow-x-hidden banner_floe_home">
-        <div class="row home_banner">
+    <div class="container overflow-x-hidden banner_floe_home">
+        <div class="row justify-content-center">
             <div class="col-12 col-lg-4">
                 <img class="img_face text-center" src="../assets/img/logo/loGoviv.png" alt="">
             </div>
-            <div class="col-12 col-lg-8 p-5 ">
+            <div class="col-12 col-lg-8">
                 <h1>Hi! I'm Lodoviv</h1>
-                <h5>Lorem ipsum dolor sit amet.</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur sequi voluptatum
-                    asperiores
-                    earum!
-                    Reiciendis voluptates ex, voluptate distinctio minus soluta reprehenderit blanditiis quasi fugiat
-                    nulla?
-                    Ipsa
-                    ullam
-                    doloremque nostrum?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem quia debitis illum voluptatum
-                    mollitia tempora, quos rerum quisquam expedita asperiores consequatur voluptates aliquid
-                    reprehenderit sequi distinctio modi aspernatur totam.
-                    Quasi eveniet tenetur, porro ut cupiditate eum laboriosam aut, id atque totam maxime dolores ullam
-                    esse. Esse incidunt aspernatur eveniet natus, nostrum laborum sit quam quaerat perferendis ea
-                    quisquam alias.
-
-                </p>
+                <h5>Artista Multidimensionale abitante della Rete Cosmica e Digitale.</h5>
+                
             </div>
 
         </div>
@@ -42,23 +27,20 @@
     width: 80%;
 }
 
-.home_banner {
+/* .home_banner {
     margin-top: 50px;
     height: 400px;
     background-color: #8400ff73;
 }
+ */
 
-
-
-.banner_floe_home::-webkit-scrollbar {
+/* .banner_floe_home::-webkit-scrollbar {
     width: 5px;
 }
 
 .banner_floe_home::-webkit-scrollbar-thumb {
     background-color: #ebbdfe;
     height: 123px;
-
-
 }
 
 .banner_floe_home::-webkit-scrollbar-thumb:hover {
@@ -68,8 +50,7 @@
 
 .banner_floe_home::-webkit-scrollbar-track {
     border-left: 1px solid #8400ffc9;
-}
-
+} */
 
 
 @media (max-width: 768px) {

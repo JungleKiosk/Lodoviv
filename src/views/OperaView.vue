@@ -7,10 +7,16 @@ const state = reactive({
     operaArray: operaArray
 });
 
+/* const showTitleIndex = ref(null); */
+
 function getImagePath(name) {
-    // Metodo per ottenere il percorso completo dell'immagine
     return new URL(`../assets/img/opera/${name}`, import.meta.url).href;
 }
+
+/* function toggleTitleVisibility(index) {
+    showTitleIndex.value = (showTitleIndex.value === index) ? null : index;
+}
+ */
 </script>
 
 <template>
@@ -96,12 +102,12 @@ function getImagePath(name) {
             <div class="col-12 col-lg-12 my-5 text-center">
                 <div v-for="(opera, indexOpera) in state.operaArray" :key="indexOpera" :id="opera.id"
                     class="card_opera">
+                    <img class="mb-5" :src="getImagePath(opera.img, 'opera')" :alt="opera.img" />
 
                     <div class="text-center mt-5">
                         <h1 class="txt_operadate">{{ opera.title }}</h1>
                     </div>
 
-                    <img class="mb-5" :src="getImagePath(opera.img, 'opera')" :alt="opera.img" />
 
                 </div>
             </div>

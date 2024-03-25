@@ -23,7 +23,7 @@ export default {
 
 <template>
 
-    <button class="toggle_sidebar_button btn_menu pulp" @click="toggleSidebar"><span style="color: #ebbdfe;">menu</span>
+    <button class="toggle_sidebar_button btn_menu pulp" @click="toggleSidebar"><span>menu</span>
     </button>
 
     <a href="#" class="scroll-to-top upper_arrow" @click="scrollToTop">
@@ -163,7 +163,7 @@ li a:hover {
 
 .toggle_sidebar_button:hover {
     background-color: #ebbdfe;
-    color: #27272a;
+    color: #000000;
     border: white;
 }
 

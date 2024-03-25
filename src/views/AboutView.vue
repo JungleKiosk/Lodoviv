@@ -4,7 +4,7 @@
 </script>
 
 <template>
-   <!--  <video class="video" autoplay muted loop id="bgVideo">
+    <!--  <video class="video" autoplay muted loop id="bgVideo">
         <source src="../assets/img/video/tramonto.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video> -->
@@ -14,17 +14,17 @@
 
                 <h1>About me</h1>
                 <h5>Lorem ipsum dolor sit amet.</h5>
-                <div class="col-lg-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur sequi
-                        voluptatum asperiores earum!
-                        Reiciendis voluptates ex, voluptate distinctio minus soluta reprehenderit blanditiis quasi
-                        fugiat nulla? Ipsa
-                        ullam
-                        doloremque nostrum?</p>
-                    <!-- <img class="circle_neon position-absolute" src="./../assets/img/dec/maxcoach-shape-02.png" alt=""> -->
-                    <img class="circle_neon position-absolute" src="./../assets/img/dec/maxcoach-shape-02.png" alt="">
-                    <!-- <img class="circle_neon position-absolute" src="./../assets/img/dec/maxcoach-shape-02.png" alt=""> -->
-                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consectetur sequi
+                    voluptatum asperiores earum!
+                    Reiciendis voluptates ex, voluptate distinctio minus soluta reprehenderit blanditiis quasi
+                    fugiat nulla? Ipsa
+                    ullam
+                    doloremque nostrum?</p>
+                <!-- <img class="circle_neon position-absolute" src="./../assets/img/dec/maxcoach-shape-02.png" alt=""> -->
+                <img class="circle_neon position-absolute" src="./../assets/img/dec/maxcoach-shape-02.png" alt="">
+                <!-- <img class="circle_neon position-absolute" src="./../assets/img/dec/maxcoach-shape-02.png" alt=""> -->
+
 
             </div>
             <div class="col-12 col-lg12">
