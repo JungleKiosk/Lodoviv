@@ -27,7 +27,7 @@ function toggleTitleVisibility(index) {
     <section class="jumbotron">
         <div class="container mb-5">
             <div class="row">
-                <div class="col-12 col-lg-8 mt-5">
+                <div class="col-12 col-lg-8">
 
                     <img src="../assets/img/dec/jfq.png" style="width: 100%;" alt="">
                     <h4 class="m-3">Enjoy my artwork, have fun, think, reflect!</h4>

@@ -9,7 +9,7 @@
         Your browser does not support the video tag.
     </video> -->
     <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-12 col-lg-8 mt-5">
 
                 <h1>About me</h1>
@@ -34,15 +34,34 @@
                 </div> -->
             </div>
         </div>
+        <div class="row mb-5">
+            <div class="col-12 col-lg-8 mt-5">
+
+            </div>
+            <div class="col-12 col-lg12">
+
+                <!-- <div class="">
+                    <img src="./../assets/img/dec/wow.png" alt="">
+                </div> -->
+            </div>
+        </div>
+
+        <footer>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <h4>contacts</h4>
+                </div>
+                <div class="col-6">
+                    <h4>Opera</h4>
+                </div>
+
+            </div>
+        </footer>
     </div>
 
 </template>
 
 <style>
-.video {
-    width: 100%;
-}
-
 .circle_neon {
     width: 5%;
     top: 230px;
@@ -57,7 +76,11 @@
 
 @media (max-width: 768px) {
     .circle_neon {
-        display: none;
+        width: 10%;
+        top: 210px;
+        left: 1px;
+        z-index: -1;
+        rotate: 180deg
     }
 }
 </style>
