@@ -44,25 +44,25 @@ export default {
         <ul class="p-3">
             <li><a class="ancor_menu" href="#opera1">Citizenship: my head</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera2">24/7</a></li>
+            <li><a class="ancor_menu" href="#opera2">Utopia conviviale</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera3">La dormiente</a></li>
+            <li><a class="ancor_menu" href="#opera3">Utopia urbana</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera4">Utopia conviviale</a></li>
+            <li><a class="ancor_menu" href="#opera4">24/7</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera5">Utopia urbana</a></li>
+            <li><a class="ancor_menu" href="#opera5">La dormiente</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera6">Nonostante tutto</a></li>
+            <li><a class="ancor_menu" href="#opera6">La nostra coscienza <br> infestata da vite potenziali</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera7">Siccità: 15000 litri d’acqua <br> per 1 kilo di carne bovina</a></li>
+            <li><a class="ancor_menu" href="#opera7">Nonostante tutto</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera8">Taser per la polizia</a></li>
+            <li><a class="ancor_menu" href="#opera8">Siccità: 15000 litri d’acqua <br> per 1 kilo di carne bovina</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera9">Non fate la guerra per fare la pace, <br> fate la pace per fare la pace</a></li>
+            <li><a class="ancor_menu" href="#opera9">Taser per la polizia</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera10">La nostra coscienza <br> infestata da vite potenziali</a></li>
+            <li><a class="ancor_menu" href="#opera10">Non fate la guerra per fare la pace, <br> fate la pace per fare la pace</a></li>
             <hr>
-            
+            <li><a class="ancor_menu" href="#opera11"></a></li>            
         </ul>
 
     </nav>
