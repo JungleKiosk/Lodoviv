@@ -1,5 +1,5 @@
 <script setup>
-import { reactive } from 'vue';
+import { ref, reactive } from 'vue';
 import MenuOperaToggle from './MenuOperaToggle.vue';
 import { operaArray } from "../data/operaCards.js";
 
@@ -7,16 +7,17 @@ const state = reactive({
     operaArray: operaArray
 });
 
-/* const showTitleIndex = ref(null); */
+// Variabile reattiva per tenere traccia dell'indice dell'opera il cui titolo è attualmente visualizzato
+const showTitleIndex = ref(null);
 
 function getImagePath(name) {
     return new URL(`../assets/img/opera/${name}`, import.meta.url).href;
 }
 
-/* function toggleTitleVisibility(index) {
+// Funzione per cambiare lo stato di showTitleIndex quando l'utente fa clic sull'immagine
+function toggleTitleVisibility(index) {
     showTitleIndex.value = (showTitleIndex.value === index) ? null : index;
 }
- */
 </script>
 
 <template>
@@ -98,17 +99,17 @@ function getImagePath(name) {
 
     <!--  <div class="lt-animation-top"></div> -->
     <div class="container mt-5 p-5">
-        <div class="row justify-content-center my-5">
-            <div class="col-12 col-lg-12 my-5 text-center">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12 text-center">
                 <div v-for="(opera, indexOpera) in state.operaArray" :key="indexOpera" :id="opera.id"
                     class="card_opera">
-                    <img class="mb-5" :src="getImagePath(opera.img, 'opera')" :alt="opera.img" />
+                    <!-- aggiunta della direttiva @click per gestire il clic sull'immagine -->
+                    <img class="mb-3" :src="getImagePath(opera.img, 'opera')" :alt="opera.img" @click="toggleTitleVisibility(indexOpera)" />
 
-                    <div class="text-center mt-5">
-                        <h1 class="txt_operadate">{{ opera.title }}</h1>
+                    <!-- Utilizzo della direttiva v-if per visualizzare il titolo solo se showTitleIndex è uguale a indexOpera -->
+                    <div class="text-center">
+                        <h3 class="txt_operadate" v-if="showTitleIndex === indexOpera">{{ opera.title }}</h3>
                     </div>
-
-
                 </div>
             </div>
         </div>

@@ -48,7 +48,7 @@ export default {
             <hr>
             <li><a class="ancor_menu" href="#opera3">La dormiente</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera4">La nostra coscienza <br> infestata da vite potenziali</a></li>
+            <li><a class="ancor_menu" href="#opera4">Utopia conviviale</a></li>
             <hr>
             <li><a class="ancor_menu" href="#opera5">Utopia urbana</a></li>
             <hr>
@@ -60,7 +60,7 @@ export default {
             <hr>
             <li><a class="ancor_menu" href="#opera9">Non fate la guerra per fare la pace, <br> fate la pace per fare la pace</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera10">Utopia conviviale</a></li>
+            <li><a class="ancor_menu" href="#opera10">La nostra coscienza <br> infestata da vite potenziali</a></li>
             <hr>
             
         </ul>
