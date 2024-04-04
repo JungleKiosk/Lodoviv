@@ -36,6 +36,10 @@ a {
     color: #1dc0bb;
 }
 
+img{
+    pointer-events: none;
+}
+
 .btn_bg {
     background-color: $bg_body;
     color: #1dc0bb;

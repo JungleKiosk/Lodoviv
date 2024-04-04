@@ -9,6 +9,12 @@
             <div class="col-12 col-lg-12 text-center">
                 <img class="img_home" src="../assets/img/logo/Hi01Artboard1.svg" alt="">
             </div>
+            <div class="col-12 col-lg-12">
+                <div class="cube"></div>
+            </div>
+           <!--  <div class="col-12 col-lg-12">
+                <div class="cube"></div>
+            </div> -->
             <div class="col-12 col-lg-8 text-center">
                 <img class="img_face" src="../assets/img/logo/loGoviv.png" alt="">
             </div>
@@ -63,7 +69,7 @@
 
                 <p>
                     <img class="phone" src="../assets/img/logo/phoneGreen.png" alt="">
-                    
+
                     3485697226
                 </p>
                 <p>
@@ -73,7 +79,7 @@
             </div>
 
             <div class="col-6">
-                
+
             </div>
 
         </div>
@@ -83,14 +89,15 @@
 </template>
 
 <style scoped>
-.phone{
+.phone {
     width: 15%;
 }
 
 .img_home {
-    width: 80%;
+    width: 70%;
 }
-.img_face{
+
+.img_face {
     width: 60%;
 }
 
@@ -99,13 +106,17 @@
     color: #ebbdfe;
 }
 
-.title_card{
+.cube {
+    height: 100px;
+}
+
+.title_card {
     color: #00fdb5;
 }
 
 #footer {
 
-background-color: #23004673;
+    background-color: #23004673;
 }
 
 @media (max-width: 768px) {

@@ -104,9 +104,13 @@ function toggleTitleVisibility(index) {
                 <div v-for="(opera, indexOpera) in state.operaArray" :key="indexOpera" :id="opera.id"
                     class="card_opera">
                     <!-- aggiunta della direttiva @click per gestire il clic sull'immagine -->
-                    <img class="mb-3" :src="getImagePath(opera.img, 'opera')" :alt="opera.img" @click="toggleTitleVisibility(indexOpera)" />
 
-                    <!-- Utilizzo della direttiva v-if per visualizzare il titolo solo se showTitleIndex è uguale a indexOpera -->
+                    <div style="position: relative;">
+
+                        <img class="mb-3" :src="getImagePath(opera.img, 'opera')" :alt="opera.img"
+                            @click="toggleTitleVisibility(indexOpera)" />
+                    </div>
+
                     <div class="text-center">
                         <h3 class="txt_operadate" v-if="showTitleIndex === indexOpera">{{ opera.title }}</h3>
                     </div>
