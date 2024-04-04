@@ -24,7 +24,7 @@ function toggleTitleVisibility(index) {
 
     <MenuOperaToggle />
 
-    <section class="jumbotron">
+    <section class="jumbotron pt-3">
         <div class="container mb-5">
             <div class="row">
                 <div class="col-12 col-lg-8">

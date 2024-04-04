@@ -7,10 +7,13 @@
     <div class="container overflow-x-hidden banner_floe_home">
         <div class="row justify-content-center mb-5">
             <div class="col-12 col-lg-12 text-center">
-                <img class="img_home" src="../assets/img/logo/home.png" alt="">
+                <img class="img_home" src="../assets/img/logo/Hi01Artboard1.svg" alt="">
+            </div>
+            <div class="col-12 col-lg-8 text-center">
+                <img class="img_face" src="../assets/img/logo/loGoviv.png" alt="">
             </div>
 
-            <div class="col-12 col-lg-4">
+            <!-- <div class="col-12 col-lg-4">
 
                 <div class="card card_style text-left rounded-5">
                     <img class="card-img-top" src="./../assets/img/opera/2.png" alt="">
@@ -47,32 +50,48 @@
                             quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
 
     </div>
 
-    <footer id="footer" class="p-5 mt-5">
+    <footer id="footer" class="p-5">
         <div class="row mt-5">
             <div class="col-6">
                 <h4>Contacts</h4>
+
                 <p>
+                    <img class="phone" src="../assets/img/logo/phoneGreen.png" alt="">
+                    
                     3485697226
                 </p>
                 <p>
+                    <img class="phone" src="../assets/img/logo/mailGreen.png" alt="">
                     lodovico.lindemann@gmail.com</img>
                 </p>
             </div>
+
+            <div class="col-6">
+                
+            </div>
+
         </div>
     </footer>
 
 
 </template>
 
-<style>
+<style scoped>
+.phone{
+    width: 15%;
+}
+
 .img_home {
-    width: 50%;
+    width: 80%;
+}
+.img_face{
+    width: 60%;
 }
 
 .card_style {
@@ -84,36 +103,26 @@
     color: #00fdb5;
 }
 
-/* .home_banner {
-    margin-top: 50px;
-    height: 400px;
-    background-color: #8400ff73;
-}
- */
+#footer {
 
-/* .banner_floe_home::-webkit-scrollbar {
-    width: 5px;
+background-color: #23004673;
 }
 
-.banner_floe_home::-webkit-scrollbar-thumb {
-    background-color: #ebbdfe;
-    height: 123px;
+@media (max-width: 768px) {
+    .img_home {
+        width: 100%;
+    }
 }
-
-.banner_floe_home::-webkit-scrollbar-thumb:hover {
-    background-color: #1dc0bb;
-    border-radius: 20px;
-}
-
-.banner_floe_home::-webkit-scrollbar-track {
-    border-left: 1px solid #8400ffc9;
-} */
-
 
 @media (max-width: 768px) {
     .img_face {
-        width: 100%;
-        /* Imposta la larghezza al 100% su dispositivi con larghezza massima di 768px */
+        width: 80%;
+    }
+}
+
+@media (max-width: 786px) {
+    .phone {
+        width: 60%;
     }
 }
 </style>
