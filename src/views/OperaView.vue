@@ -26,12 +26,12 @@ function toggleTitleVisibility(index) {
 
     <section class="jumbotron pt-3">
         <div class="container mb-5">
-            <div class="row">
+            <div class="row justify-content-center text-center">
                 <div class="col-12 col-lg-8">
-
-                    <img src="../assets/img/dec/jfq.png" style="width: 100%;" alt="">
-                    <h4 class="m-3">Enjoy my artwork, have fun, think, reflect!</h4>
-                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+                    <img class="justfun text-center" src="../assets/img/logo/just2.png" alt="">
+                </div>
+                <div class="col-12 col-lg-6 svg-container">
+                    <svg class="blob-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="40%" id="blobSvg">
                         <defs>
                             <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -86,8 +86,6 @@ function toggleTitleVisibility(index) {
                     </svg>
                 </div>
 
-                <div class="col-lg-4 text-center mt-5">
-                </div>
 
             </div>
             <div class="lt-animation-bottom"></div>
@@ -123,6 +121,10 @@ function toggleTitleVisibility(index) {
 
 
 <style scoped>
+.justfun {
+    width: 60%;
+}
+
 img {
     width: 50%;
 }
@@ -132,11 +134,14 @@ img {
         width: 100%;
         /* Imposta la larghezza al 100% su dispositivi con larghezza massima di 768px */
     }
+    .justfun {
+    width: 100%;
+}
 }
 
 .jumbotron {
     margin-top: 100px;
-    height: 400px;
+    height: 300px;
     background-color: #8400ff73;
 }
 
@@ -178,4 +183,33 @@ img {
         display: none;
     } */
 }
+
+/* Stile standard per il posizionamento del SVG */
+.svg-container {
+    position: relative;
+}
+
+.blob-svg {
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 40%;
+}
+
+/* Stile condizionale per dispositivi mobili */
+@media (max-width: 768px) {
+    .blob-svg {
+        position: static; /* Rimuove l'absolute positioning */
+        width: 50%;      /* Adatta la dimensione allo schermo */
+        margin-top: 20px; /* Aggiunge uno spazio tra gli elementi */
+        align-content: center;
+        align-items: center;
+    }
+    .jumbotron {
+        height: 350px; /* Imposta l'altezza del jumbotron a 200px su dispositivi mobili */
+    }
+}
+
+
+
 </style>
