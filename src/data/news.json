@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "name": "News 1",
+        "image": ".src/assets/img/projects/hello_vue.png",
+        "environment": "Vue 3 + Vite",
+        "paks": "",
+        "stack": "HTML - CSS - JS",
+        "link": "https://junglekiosk.github.io/HelloVue/",
+        "data": "Jun 07, 2023",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!"
+    },
+    {
+        "id": 2,
+        "name": "News 2",
+        "image": "assets/img/projects/lucas_2022.png",
+        "environment": "QGIS - Google My Maps - Google Earth Pro",
+        "paks": "",
+        "stack": "Python",
+        "link": "https://junglekiosk.github.io/LUCAS_2022/",
+        "data": "Jun 18, 2023",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!"
+    },
+    {
+        "id": 3,
+        "name": "News 3",
+        "image": ".src/assets/img/projects/vue_leaflet.png",
+        "environment": "Vue 3 + Vite",
+        "paks": "",
+        "stack": "HTML - CSS - JS",
+        "link": "https://junglekiosk.github.io/VueLeaflet/",
+        "data": "Jun 11, 2023",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!"
+    },
+    {
+        "id": 4,
+        "name": "News 4",
+        "image": "src/assets/img/projects/chestnut_zoning.png",
+        "environment": "QGIS - Google Earth Pro",
+        "paks": "",
+        "stack": "Python",
+        "link": "https://junglekiosk.github.io/QGIS_zoning/",
+        "data": "Jun 13, 2023",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!"
+    },
+    {
+        "id": 5,
+        "name": "News 5",
+        "image": "src/assets/img/projects/usda_py.png",
+        "environment": "QGIS - Google Earth Pro",
+        "paks": "",
+        "stack": "Python - RStudio",
+        "link": "https://junglekiosk.github.io/QGIS_SoilTexture/",
+        "data": "Jun 18, 2023",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!"
+    },
+    {
+        "id": 6,
+        "name": "News 6",
+        "image": "src/assets/img/projects/soil_deg.png",
+        "environment": "QGIS - Google Earth Engine",
+        "paks": "",
+        "stack": "JS - Python - RStudio ",
+        "link": "https://junglekiosk.github.io/QGIS_SoilDegradation/",
+        "data": "Jun 22, 2023",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!"
+    },
+    {
+        "id": 7,
+        "name": "News 7",
+        "image": "src/assets/img/projects/rs.png",
+        "environment": "QGIS",
+        "paks": "",
+        "stack": "SCP",
+        "link": "https://junglekiosk.github.io/QGIS_RS_NDVI_CIgreen/",
+        "data": "Jul 10, 2023",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!"
+    },
+    {
+        "id": 8,
+        "name": "News 8",
+        "image": "src/assets/img/projects/rs.png",
+        "environment": "QGIS",
+        "paks": "",
+        "stack": "SCP",
+        "link": "https://junglekiosk.github.io/QGIS_RS_NDVI_CIgreen/",
+        "data": "Jul 10, 2023",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!"
+    },
+    {
+        "id": 9,
+        "name": "News 9",
+        "image": "src/assets/img/projects/rs.png",
+        "environment": "QGIS",
+        "paks": "",
+        "stack": "SCP",
+        "link": "https://junglekiosk.github.io/QGIS_RS_NDVI_CIgreen/",
+        "data": "Jul 10, 2023",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!"
+    }
+]
