@@ -90,23 +90,25 @@ const redirectToNews = () => {
     </div>
 
     <footer id="footer" class="p-5">
-        <div class="row mt-5">
-            <div class="col-6">
-                <h4>Contacts</h4>
-
+        <div class="row justify-content-center align-baseline mt-5">
+            <h4>Contacts</h4>
+            <div class="col-4">          
                 <p>
                     <img class="phone" src="../assets/img/logo/phoneGreen.png" alt="">
 
                     3485697226
                 </p>
+            </div>
+            <div class="col-4">
                 <p>
                     <img class="phone" src="../assets/img/logo/mailGreen.png" alt="">
                     lodovico.lindemann@gmail.com</img>
                 </p>
             </div>
-
-            <div class="col-6">
-
+            <div class="col-4">
+                <p>
+                    <img class="inst" src="../assets/img/dec/inst_60.png" alt=""><a class="ancor_inst" href="https://www.instagram.com/lodoviv/" target="_blank">@lodoviv</a></img>
+                </p>
             </div>
 
         </div>
@@ -118,6 +120,12 @@ const redirectToNews = () => {
 <style scoped>
 .phone {
     width: 15%;
+}
+.ancor_inst{
+    color: white;
+}
+.inst{
+    width: 10%;
 }
 
 .img_home {

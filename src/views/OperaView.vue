@@ -28,7 +28,7 @@ function toggleTitleVisibility(index) {
         <div class="container mb-5">
             <div class="row justify-content-center text-center">
                 <div class="col-12 col-lg-8">
-                    <img class="justfun text-center" src="../assets/img/logo/just2.png" alt="">
+                    <img class="justfun text-center" src="../assets/img/logo/just_fun.svg" alt="">
                 </div>
                 <div class="col-12 col-lg-6 svg-container">
                     <svg class="blob-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
@@ -134,15 +134,16 @@ img {
         width: 100%;
         /* Imposta la larghezza al 100% su dispositivi con larghezza massima di 768px */
     }
+
     .justfun {
-    width: 100%;
-}
+        width: 100%;
+    }
 }
 
 .jumbotron {
     margin-top: 100px;
     height: 300px;
-    background-color: #8400ff73;
+    /* background-color: #8400ff73; */
 }
 
 .z-index-minus-1 {
@@ -199,17 +200,19 @@ img {
 /* Stile condizionale per dispositivi mobili */
 @media (max-width: 768px) {
     .blob-svg {
-        position: static; /* Rimuove l'absolute positioning */
-        width: 50%;      /* Adatta la dimensione allo schermo */
-        margin-top: 20px; /* Aggiunge uno spazio tra gli elementi */
+        position: static;
+        /* Rimuove l'absolute positioning */
+        width: 50%;
+        /* Adatta la dimensione allo schermo */
+        margin-top: 20px;
+        /* Aggiunge uno spazio tra gli elementi */
         align-content: center;
         align-items: center;
     }
+
     .jumbotron {
-        height: 350px; /* Imposta l'altezza del jumbotron a 200px su dispositivi mobili */
+        height: 350px;
+        /* Imposta l'altezza del jumbotron a 200px su dispositivi mobili */
     }
 }
-
-
-
 </style>
