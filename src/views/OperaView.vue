@@ -117,6 +117,36 @@ function toggleTitleVisibility(index) {
         </div>
     </div>
 
+    <footer id="footer" class="p-5">
+        <div class="row justify-content-between align-baseline mt-5">
+            <h4>Contacts</h4>
+            <div class="col-12 col-lg-3 p-4">
+
+                <img class="inst" src="../assets/img/dec/inst_50.png" alt=""><a class="ancor_inst px-3"
+                    href="https://www.instagram.com/lodoviv/" target="_blank">@lodoviv</a></img>
+
+            </div>
+            <div class="col-12 col-lg-3">
+                <img class="phone" src="../assets/img/logo/phoneGreen.png" alt="">3485697226
+            </div>
+            <div class="col-12 col-lg-3">
+                <img class="phone" src="../assets/img/logo/mailGreen.png" alt="">lodovico.lindemann@gmail.com</img>
+
+            </div>
+
+
+            <!--  <div class="col-12">
+                <ul class="no-bullet-list">
+                    <li><img class="phone" src="../assets/img/logo/phoneGreen.png" alt="">3485697226</li>
+                    <li><img class="phone" src="../assets/img/logo/mailGreen.png"
+                            alt="">lodovico.lindemann@gmail.com</img></li>
+                    <li><img class="inst" src="../assets/img/dec/inst_50.png" alt=""><a class="ancor_inst"
+                            href="https://www.instagram.com/lodoviv/" target="_blank">@lodoviv</a></img></li>
+                </ul>
+            </div> -->
+        </div>
+    </footer>
+
 </template>
 
 
@@ -213,6 +243,55 @@ img {
     .jumbotron {
         height: 350px;
         /* Imposta l'altezza del jumbotron a 200px su dispositivi mobili */
+    }
+}
+
+
+#footer {
+
+    background-color: #23004673;
+}
+
+.no-bullet-list {
+    list-style-type: none;
+    /* Rimuove i puntini */
+    padding-left: 0;
+    /* Rimuove il rientro */
+}
+
+.phone {
+    width: 30%;
+}
+
+.inst {
+    width: 18%;
+}
+
+.ancor_inst {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .img_home {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .img_face {
+        width: 80%;
+    }
+}
+
+@media (max-width: 786px) {
+    .phone {
+        width: 20%;
+    }
+
+    .inst {
+        width: 11%;
+        margin-left: 4px;
     }
 }
 </style>

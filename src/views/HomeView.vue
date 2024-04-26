@@ -4,7 +4,7 @@ import { useRouter } from 'vue-router'; // Importa useRouter per la navigazione
 // Funzione di reindirizzamento
 const router = useRouter();
 const redirectToNews = () => {
-  router.push('/newscomponent'); // Naviga al percorso definito
+    router.push('/newscomponent'); // Naviga al percorso definito
 };
 </script>
 
@@ -29,7 +29,7 @@ const redirectToNews = () => {
             </div>
         </div>
 
-        <div class="row justify-content-center my-5">
+        <!--  <div class="row justify-content-center my-5">
             <div class="col-12 col-lg-4 my-5">
                 <div class="card card_style text-left rounded-3">
                     <img class="card-img-top" src="./../assets/img/dec/know.png" alt="">
@@ -37,8 +37,8 @@ const redirectToNews = () => {
                     <div class="card-body">
                         <h4 class="card-title text-center title_card">News</h4>
                         <hr>
-                        <!-- link -->
-                        <button class="btn btn-info" @click="redirectToNews">Read More</button> <!-- Naviga a /news -->
+                    
+                        <button class="btn btn-info" @click="redirectToNews">Read More</button>
                         <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
                             quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam
                             quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!</p>
@@ -53,7 +53,7 @@ const redirectToNews = () => {
                     <div class="card-body">
                         <h4 class="card-title text-center title_card">Why?</h4>
                         <hr>
-                        <button class="btn btn-info" @click="redirectToNews">Read More</button> <!-- Naviga a /news -->
+                        <button class="btn btn-info" @click="redirectToNews">Read More</button>
                         <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
                             quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam
                             quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!</p>
@@ -69,14 +69,14 @@ const redirectToNews = () => {
                     <div class="card-body">
                         <h4 class="card-title text-center title_card">Cyber citizenship</h4>
                         <hr>
-                        <button class="btn btn-info" @click="redirectToNews">Read More</button> <!-- Naviga a /news -->
+                        <button class="btn btn-info" @click="redirectToNews">Read More</button>
                         <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
                             quibusdam tempore quas perspiciatis quidem molestiae quod, impedit quo. Earum quo numquam
                             quasi ipsum voluptatum perferendis consequuntur commodi aspernatur natus provident!</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8 text-center">
@@ -90,27 +90,32 @@ const redirectToNews = () => {
     </div>
 
     <footer id="footer" class="p-5">
-        <div class="row justify-content-center align-baseline mt-5">
+        <div class="row justify-content-between align-baseline mt-5">
             <h4>Contacts</h4>
-            <div class="col-4">          
-                <p>
-                    <img class="phone" src="../assets/img/logo/phoneGreen.png" alt="">
+            <div class="col-12 col-lg-3 p-4">
 
-                    3485697226
-                </p>
+                <img class="inst" src="../assets/img/dec/inst_50.png" alt=""><a class="ancor_inst px-3"
+                    href="https://www.instagram.com/lodoviv/" target="_blank">@lodoviv</a></img>
+
             </div>
-            <div class="col-4">
-                <p>
-                    <img class="phone" src="../assets/img/logo/mailGreen.png" alt="">
-                    lodovico.lindemann@gmail.com</img>
-                </p>
+            <div class="col-12 col-lg-3">
+                <img class="phone" src="../assets/img/logo/phoneGreen.png" alt="">3485697226
             </div>
-            <div class="col-4">
-                <p>
-                    <img class="inst" src="../assets/img/dec/inst_60.png" alt=""><a class="ancor_inst" href="https://www.instagram.com/lodoviv/" target="_blank">@lodoviv</a></img>
-                </p>
+            <div class="col-12 col-lg-3">
+                <img class="phone" src="../assets/img/logo/mailGreen.png" alt="">lodovico.lindemann@gmail.com</img>
+                
             </div>
 
+
+            <!--  <div class="col-12">
+                <ul class="no-bullet-list">
+                    <li><img class="phone" src="../assets/img/logo/phoneGreen.png" alt="">3485697226</li>
+                    <li><img class="phone" src="../assets/img/logo/mailGreen.png"
+                            alt="">lodovico.lindemann@gmail.com</img></li>
+                    <li><img class="inst" src="../assets/img/dec/inst_50.png" alt=""><a class="ancor_inst"
+                            href="https://www.instagram.com/lodoviv/" target="_blank">@lodoviv</a></img></li>
+                </ul>
+            </div> -->
         </div>
     </footer>
 
@@ -118,15 +123,24 @@ const redirectToNews = () => {
 </template>
 
 <style scoped>
-.phone {
-    width: 15%;
+.no-bullet-list {
+    list-style-type: none;
+    /* Rimuove i puntini */
+    padding-left: 0;
+    /* Rimuove il rientro */
 }
-.ancor_inst{
-    color: white;
+
+.phone {
+    width: 30%;
 }
 .inst{
-    width: 10%;
+    width: 18%;
 }
+.ancor_inst {
+    color: white;
+}
+
+
 
 .img_home {
     width: 70%;
@@ -159,6 +173,7 @@ const redirectToNews = () => {
     .img_home {
         width: 100%;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -169,7 +184,11 @@ const redirectToNews = () => {
 
 @media (max-width: 786px) {
     .phone {
-        width: 60%;
+        width: 20%;
     }
+    .inst{
+    width: 11%;
+    margin-left: 4px ;
+}
 }
 </style>

@@ -17,7 +17,8 @@
                 <h4>“La passione per la grafica ha sempre accompagnato i miei studi di Lettere e Antropologia, dapprima
                     creando collage con la giustapposizione di elementi culturali distanti fra loro, in seguito, quando
                     ho sentito l’arte del cut-and-paste troppo vincolante per i messaggi che vorrei veicolare, mi sono
-                    dedicato sempre più al disegno digitale. <br> <br> Nonostante il mondo del design, anche puramente estetico
+                    dedicato sempre più al disegno digitale. <br> <br> Nonostante il mondo del design, anche puramente
+                    estetico
                     come può essere la creazione di loghi, mi abbia sempre ispirato e stimolato, il mio obiettivo è
                     creare opere con al centro un messaggio culturale, politico, sociale; rimettere insomma al centro
                     della creazione grafica l’Arte civilmente impegnata.<br><br> Per questo le mie opere sono sempre
@@ -28,12 +29,12 @@
             <div class="col-12 col-lg-4 text-center align-content-center">
                 <img class="img_face" src="../assets/img/logo/loGoviv.png" alt="">
             </div>
-<!--             <div class="col-12 col-lg-12">
+            <!--             <div class="col-12 col-lg-12">
                 <div class="cube">
 
                 </div>
             </div> -->
-           <!--  <div class="col-12 col-lg-12">
+            <!--  <div class="col-12 col-lg-12">
                 <div class="cube"></div>
             </div> -->
             <!-- <div class="col-12 col-lg-12">
@@ -52,37 +53,43 @@
 
     </div>
     <footer id="footer" class="p-5">
-        <div class="row mt-5">
-            <div class="col-6">
-                <h4>Contacts</h4>
+        <div class="row justify-content-between align-baseline mt-5">
+            <h4>Contacts</h4>
+            <div class="col-12 col-lg-3 p-4">
 
-                <p>
-                    <img class="phone" src="../assets/img/logo/phoneGreen.png" alt="">
-                    
-                    3485697226
-                </p>
-                <p>
-                    <img class="phone" src="../assets/img/logo/mailGreen.png" alt="">
-                    lodovico.lindemann@gmail.com</img>
-                </p>
+                <img class="inst" src="../assets/img/dec/inst_50.png" alt=""><a class="ancor_inst px-3"
+                    href="https://www.instagram.com/lodoviv/" target="_blank">@lodoviv</a></img>
+
+            </div>
+            <div class="col-12 col-lg-3">
+                <img class="phone" src="../assets/img/logo/phoneGreen.png" alt="">3485697226
+            </div>
+            <div class="col-12 col-lg-3">
+                <img class="phone" src="../assets/img/logo/mailGreen.png" alt="">lodovico.lindemann@gmail.com</img>
+
             </div>
 
-            <div class="col-6">
-                
-            </div>
 
+            <!--  <div class="col-12">
+                <ul class="no-bullet-list">
+                    <li><img class="phone" src="../assets/img/logo/phoneGreen.png" alt="">3485697226</li>
+                    <li><img class="phone" src="../assets/img/logo/mailGreen.png"
+                            alt="">lodovico.lindemann@gmail.com</img></li>
+                    <li><img class="inst" src="../assets/img/dec/inst_50.png" alt=""><a class="ancor_inst"
+                            href="https://www.instagram.com/lodoviv/" target="_blank">@lodoviv</a></img></li>
+                </ul>
+            </div> -->
         </div>
     </footer>
 
 </template>
 
 <style scoped>
-
-.phone{
+.phone {
     width: 15%;
 }
 
-.img_face{
+.img_face {
     width: 80%;
 }
 
@@ -120,9 +127,36 @@
     width: 7%;
 }
 
+
 #footer {
 
     background-color: #23004673;
+}
+
+.no-bullet-list {
+    list-style-type: none;
+    /* Rimuove i puntini */
+    padding-left: 0;
+    /* Rimuove il rientro */
+}
+
+.phone {
+    width: 30%;
+}
+
+.inst {
+    width: 18%;
+}
+
+.ancor_inst {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .img_home {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -131,13 +165,14 @@
     }
 }
 
-
-
 @media (max-width: 786px) {
     .phone {
-        width: 60%;
+        width: 20%;
+    }
+
+    .inst {
+        width: 11%;
+        margin-left: 4px;
     }
 }
-
-
 </style>
