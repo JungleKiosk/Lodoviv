@@ -22,10 +22,10 @@ const redirectToNews = () => {
 
         <div class="row justify-content-center mb-5">
             <div class="col-12 col-lg-12 mb-5">
-                <h4>“Se stai visitando questo mio portfolio online significa che io o qualcun altro te lo ha mandato,
+                <h6>“Se stai visitando questo mio portfolio online significa che io o qualcun altro te lo ha mandato,
                     perciò benvenut*! Che tu voglia esporre/vendere le mie opere, inaugurare una collaborazione,
                     commissionare dei progetti grafici, formulare qualsiasi altra proposta o anche solo fare una bella
-                    chiacchierate sull’Arte non esitare a contattarmi!”</h4>
+                    chiacchierate sull’Arte non esitare a contattarmi!”</h6>
             </div>
         </div>
 

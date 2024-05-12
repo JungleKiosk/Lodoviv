@@ -101,18 +101,17 @@ function toggleTitleVisibility(index) {
             <div class="col-12 col-lg-12 text-center">
                 <div v-for="(opera, indexOpera) in state.operaArray" :key="indexOpera" :id="opera.id"
                     class="card_opera">
-                    <!-- aggiunta della direttiva @click per gestire il clic sull'immagine -->
-
+                    <!-- Aggiunta della direttiva @click per gestire il clic sull'immagine -->
                     <div style="position: relative;">
-
                         <img class="mb-3" :src="getImagePath(opera.img, 'opera')" :alt="opera.img"
                             @click="toggleTitleVisibility(indexOpera)" />
                     </div>
-
                     <div class="text-center">
+                        <!-- Utilizzo di v-if per mostrare il titolo solo se showTitleIndex è uguale a indexOpera -->
                         <h3 class="txt_operadate" v-if="showTitleIndex === indexOpera">{{ opera.title }}</h3>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -242,58 +241,62 @@ img {
 
 #footer {
 
-background-color: #23004673;
+    background-color: #23004673;
 }
+
 .phone {
-width: 30%;
+    width: 30%;
 }
 
 .inst {
-width: 30%;
+    width: 30%;
 }
 
 .ancor_inst {
-color: white;
+    color: white;
 }
 
 @media (max-width: 768px) {
-.img_home {
-    width: 100%;
-}
+    .img_home {
+        width: 100%;
+    }
 
 }
 
 @media (max-width: 768px) {
-.img_face {
-    width: 80%;
-}
-}
-
-@media (max-width: 786px) {
-.phone {
-    width: 20%;
-}
-
-.inst {
-    width: 20%;
-}
+    .img_face {
+        width: 80%;
+    }
 }
 
 @media (max-width: 786px) {
-.contact-info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Aggiungi spazio tra ciascun elemento */
+    .phone {
+        width: 20%;
+    }
+
+    .inst {
+        width: 20%;
+    }
 }
 
-.phone, .inst, .mail {
-    width: 20%;
-}
+@media (max-width: 786px) {
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        /* Aggiungi spazio tra ciascun elemento */
+    }
+
+    .phone,
+    .inst,
+    .mail {
+        width: 20%;
+    }
 
 
-.mail-address {
-    margin-left: 4px; /* Aggiungi margine sinistro per separare l'immagine e l'indirizzo email */
+    .mail-address {
+        margin-left: 4px;
+        /* Aggiungi margine sinistro per separare l'immagine e l'indirizzo email */
+    }
 }
-}
-
 </style>

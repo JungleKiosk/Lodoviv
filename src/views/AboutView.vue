@@ -11,10 +11,10 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-12 col-lg-8 mt-5">
-                <h1>About me</h1>
+                <h1 class="mb-4">About me</h1>
                 <img class="circle_neon position-absolute" src="./../assets/img/dec/maxcoach-shape-02.png" alt="">
 
-                <h4>“La passione per la grafica ha sempre accompagnato i miei studi di Lettere e Antropologia, dapprima
+                <h6>“La passione per la grafica ha sempre accompagnato i miei studi di Lettere e Antropologia, dapprima
                     creando collage con la giustapposizione di elementi culturali distanti fra loro, in seguito, quando
                     ho sentito l’arte del cut-and-paste troppo vincolante per i messaggi che vorrei veicolare, mi sono
                     dedicato sempre più al disegno digitale. <br> <br> Nonostante il mondo del design, anche puramente
@@ -24,7 +24,7 @@
                     della creazione grafica l’Arte civilmente impegnata.<br><br> Per questo le mie opere sono sempre
                     accompagnate da una riflessione e una ricerca su temi ambientali, psicologici e civili, senza
                     tuttavia rinunciare al mio carattere estetico e pop che funge da tramite per i valori espressi.”
-                </h4>
+                </h6>
             </div>
             <div class="col-12 col-lg-4 text-center align-content-center">
                 <img class="img_face" src="../assets/img/logo/loGoviv.png" alt="">
@@ -97,7 +97,7 @@
 .circle_neon {
     width: 5%;
     top: 230px;
-    left: 100px;
+    left: 200px;
     z-index: -1;
     rotate: 180deg;
 }
