@@ -62,9 +62,9 @@ export default {
             <hr>
             <li><a class="ancor_menu" href="#opera10">Non fate la guerra per fare la pace, <br> fate la pace per fare la pace</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera12">BiFlag</a></li>     
+            <li><a class="ancor_menu" href="#opera11">BiFlag</a></li>
             <hr>
-            <li><a class="ancor_menu" href="#opera11">can’t stop the rainbow</a></li>
+            <li><a class="ancor_menu" href="#opera12">can’t stop the rainbow</a></li>     
         </ul>
 
     </nav>

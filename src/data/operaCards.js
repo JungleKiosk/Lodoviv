@@ -62,13 +62,13 @@ export const operaArray = [
     },
     {
         id: "opera11",
-        img: "11.png",
+        img: "12.png",
         title: "BiFlag",
         description: "10"
     },
     {
         id: "opera12",
-        img: "12.png",
+        img: "11.png",
         title: "can’t stop the rainbow",
         description: "11"
     }
