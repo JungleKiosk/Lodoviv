@@ -1,0 +1,37 @@
+<svg width="64px" height="64px" viewBox="0 0 22.00 22.00" xmlns="http://www.w3.org/2000/svg" id="memory-email">
+    <defs>
+        <!-- Definizione del primo gradiente -->
+        <linearGradient id="gradient1" x1="20.43" x2="29.588" y1="20.594" y2="20.594" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#6dc7ff"></stop>
+            <stop offset="1" stop-color="#e6abff"></stop>
+        </linearGradient>
+        <!-- Definizione del secondo gradiente -->
+        <linearGradient id="gradient2" x1="38.962" x2="47.942" y1="38.995" y2="38.995" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#6dc7ff"></stop>
+            <stop offset="1" stop-color="#e6abff"></stop>
+        </linearGradient>
+        <!-- Definizione del terzo gradiente -->
+        <linearGradient id="gradient3" x1="32" x2="32" y1="5.596" y2="51.515" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#1a6dff"></stop>
+            <stop offset="1" stop-color="#c822ff"></stop>
+        </linearGradient>
+        <!-- Definizione del quarto gradiente -->
+        <linearGradient id="gradient4" x1="31.999" x2="31.999" y1="5.596" y2="51.515" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#1a6dff"></stop>
+            <stop offset="1" stop-color="#c822ff"></stop>
+        </linearGradient>
+    </defs>
+    <!-- Utilizzo dei gradienti per riempire le forme -->
+    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="SVGRepo_iconCarrier">
+        <!-- Utilizzo del primo gradiente -->
+        <path fill="url(#gradient1)" d="M1 5H2V4H20V5H21V18H20V19H2V18H1V5M3 17H19V9H18V10H16V11H14V12H12V13H10V12H8V11H6V10H4V9H3V17M19 6H3V7H5V8H7V9H9V10H13V9H15V8H17V7H19V6Z"/>
+        <!-- Utilizzo del secondo gradiente -->
+        <path fill="url(#gradient2)" d="M47.4,42.9L47.4,42.9c-0.8,0.8-2,0.8-2.8,0l-5-5c-0.8-0.8-0.8-2,0-2.8l0,0c0.8-0.8,2-0.8,2.8,0l5,5	C48.1,40.9,48.1,42.1,47.4,42.9z"/>
+        <!-- Utilizzo del terzo gradiente -->
+        <path fill="url(#gradient3)" d="M50,9H14c-2.8,0-5,2.2-5,5v36c0,2.8,2.2,5,5,5h36c2.8,0,5-2.2,5-5V14C55,11.2,52.8,9,50,9z M53,50 c0,1.7-1.3,3-3,3H14c-1.7,0-3-1.3-3-3V14c0-1.7,1.3-3,3-3h36c1.7,0,3,1.3,3,3V50z"/>
+        <!-- Utilizzo del quarto gradiente -->
+        <path fill="url(#gradient4)" d="M48.1,39.4l-5-5c-0.2-0.2-0.3-0.3-0.5-0.4c-0.5-0.3-1.1-0.5-1.8-0.5c0,0,0,0,0,0c-0.8,0-1.6,0.3-2.2,0.9 l-3.3,3.3c-3.9-2-6.9-5.1-9-9l3.3-3.3c0.1-0.1,0.3-0.3,0.4-0.5c0.3-0.5,0.5-1.1,0.5-1.7c0-0.6-0.2-1.2-0.5-1.7 c-0.1-0.2-0.2-0.3-0.4-0.5l-5.1-5.1c-0.3-0.3-0.6-0.5-1-0.7c-0.2-0.1-0.4-0.1-0.6-0.2c-0.2,0-0.4-0.1-0.6-0.1c0,0,0,0,0,0 c-0.8,0-1.6,0.3-2.2,0.9l-3,3c-2.4,2.4-2.9,6.1-1.1,9c5,8.2,11.7,14.9,20,20c1.1,0.7,2.5,1.1,3.8,1.1c2,0,3.8-0.8,5.2-2.2l3-3 c1.1-1.1,1.2-2.7,0.4-3.9C48.4,39.7,48.2,39.5,48.1,39.4z M21.7,17.3c0.2-0.2,0.4-0.3,0.7-0.3c0.1,0,0.1,0,0.2,0 c0.2,0,0.4,0.1,0.5,0.3l5.2,5.2c0.2,0.2,0.3,0.4,0.3,0.7c0,0.3-0.1,0.5-0.3,0.7c-0.4,0.4-1,0.4-1.4,0l-5.2-5.2 C21.3,18.3,21.3,17.7,21.7,17.3z"/>
+    </g>
+</svg>
