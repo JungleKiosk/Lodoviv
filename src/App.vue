@@ -153,7 +153,7 @@ img {
 
 .lt-animation-bottom {
   bottom: 0;
-  background: linear-gradient(to left, transparent, #8500FF);
+  background: linear-gradient(to left, transparent, #8202fa);
   animation: l-bottom-passing 20s linear infinite;
 }
 
